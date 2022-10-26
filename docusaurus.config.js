@@ -54,6 +54,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          { to: '/tags', label: 'Tags', position: 'left' },
           {
             href: 'https://github.com/redonearth',
             label: 'GitHub',
