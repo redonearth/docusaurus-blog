@@ -13,5 +13,11 @@
   },
   "[typescriptreact]": {
     "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
   }
 }
