@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: `Redonearth의 개발 블로그`,
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Dev Blog of Redonearth',
   url: 'https://redonearth.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -23,8 +23,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ko',
+    locales: ['ko'],
   },
 
   presets: [
@@ -54,11 +54,12 @@ const config = {
       navbar: {
         title: `Redonearth의 개발 블로그`,
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Redonearth Logo',
           src: 'img/logo.svg',
         },
         items: [
           { to: '/tags', label: 'Tags', position: 'left' },
+          { to: '/archive', label: 'Archive', position: 'left' },
           {
             href: 'https://github.com/redonearth',
             label: 'GitHub',
