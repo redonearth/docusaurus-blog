@@ -1,6 +1,6 @@
 ---
 slug: docusaurus-blog-migration
-title: '블로그 이주하기(docusaurus)'
+title: '블로그 이주하다(docusaurus)'
 tags: [docusaurus, blog]
 ---
 
