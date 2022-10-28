@@ -2024,7 +2024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/theme-common@npm:2.1.0":
+"@docusaurus/theme-common@npm:2.1.0, @docusaurus/theme-common@npm:^2.1.0":
   version: 2.1.0
   resolution: "@docusaurus/theme-common@npm:2.1.0"
   dependencies:
@@ -4763,6 +4763,7 @@ __metadata:
     "@docusaurus/core": 2.1.0
     "@docusaurus/module-type-aliases": 2.1.0
     "@docusaurus/preset-classic": 2.1.0
+    "@docusaurus/theme-common": ^2.1.0
     "@docusaurus/types": ^2.1.0
     "@mdx-js/react": ^1.6.22
     "@tsconfig/docusaurus": ^1.0.5
