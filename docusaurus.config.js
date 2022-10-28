@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: `Redonearth의 개발 블로그`,
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://redonearth.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -39,6 +39,10 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-PY49L0QDW0',
+          anonymizeIP: true,
         },
       }),
     ],
