@@ -8,6 +8,8 @@ ES2015(ES6)에서 [템플릿 리터럴](https://developer.mozilla.org/ko/docs/We
 
 문자열과 자바스크립트 변수를 결합할 때 대부분 백틱을 사용해서 코드를 작성하고 있는데 일부 코드에서 에러가 발생했고, 해결해가면서 백틱의 특징을 조금 더 알 수 있었다.
 
+<!--truncate-->
+
 ## 백틱은 화면에 입력한 그대로 표현된다?
 
 백틱의 특성 중 하나는 백틱 내에 입력한 문자열은 _공백_ 과 _개행_ 까지 그대로 표현되는 것이다. 이러한 특징은 마치 HTML의 [pre 태그](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)와 비슷하다.

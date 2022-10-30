@@ -6,6 +6,8 @@ tags: [nextjs, svg]
 
 Next.js 프로젝트를 하나 진행 중인데 `@svgr/webpack`를 사용해서 `*.svg` 파일을 컴포넌트처럼 import 해서 사용하고 있었다.
 
+<!--truncate-->
+
 ![shedding](./images/svgr.png)
 
 데스크탑 크롬 브라우저에서 잘 되는 것을 보고 한창 개발을 진행하던 중, 아이폰으로 테스트하기 위해 접속해봤더니...
