@@ -6,7 +6,7 @@ import { useColorMode } from '@docusaurus/theme-common';
 
 const utterancesSelector = 'iframe.utterances-frame';
 
-export default function BlogPostItem(props): JSX.Element {
+export default function BlogPostItem(props: any): JSX.Element {
   const { isBlogPostPage } = useBlogPost();
   const { colorMode } = useColorMode();
   const utterancesTheme = colorMode === 'dark' ? 'github-dark' : 'github-light';
