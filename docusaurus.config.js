@@ -62,8 +62,9 @@ const config = {
           { to: '/archive', label: 'Archive', position: 'left' },
           {
             href: 'https://github.com/redonearth',
-            label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
