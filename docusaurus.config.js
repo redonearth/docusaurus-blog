@@ -35,7 +35,11 @@ const config = {
         docs: false,
         blog: {
           routeBasePath: '/',
+          blogSidebarTitle: '최근 게시물',
+          blogSidebarCount: 8,
           showReadingTime: true,
+          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+            frontMatter.hide_reading_time ? undefined : defaultReadingTime({ content }),
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
