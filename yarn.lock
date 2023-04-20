@@ -2835,6 +2835,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^18.15.12":
+  version: 18.15.12
+  resolution: "@types/node@npm:18.15.12"
+  checksum: dff7596db8d0a18bcd8da542dc62ed4377cba39546ff53baaa06d106f1482bc3e4e5e03644f5d1e3cef0904ffbe8ebbc244b2b0851f8025ab2a3959ee0ace58f
+  languageName: node
+  linkType: hard
+
 "@types/parse-json@npm:^4.0.0":
   version: 4.0.0
   resolution: "@types/parse-json@npm:4.0.0"
@@ -4834,6 +4841,7 @@ __metadata:
     "@docusaurus/types": ^2.4.0
     "@mdx-js/react": ^1.6.22
     "@tsconfig/docusaurus": ^1.0.7
+    "@types/node": ^18.15.12
     "@types/react": ^17.0.2
     "@types/react-dom": ^17.0.2
     clsx: ^1.2.1

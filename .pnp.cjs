@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/types", "virtual:760e0e76e3202ca7681e21ec28cced9dbd490b746f9e38ae79080410ca5a772d8143040f6f7c0fbec3d1081148487410fe0c09e694c3da1f1d605da9a42b485e#npm:2.4.0"],\
             ["@mdx-js/react", "virtual:760e0e76e3202ca7681e21ec28cced9dbd490b746f9e38ae79080410ca5a772d8143040f6f7c0fbec3d1081148487410fe0c09e694c3da1f1d605da9a42b485e#npm:1.6.22"],\
             ["@tsconfig/docusaurus", "npm:1.0.7"],\
+            ["@types/node", "npm:18.15.12"],\
             ["@types/react", "npm:17.0.58"],\
             ["@types/react-dom", "npm:17.0.19"],\
             ["clsx", "npm:1.2.1"],\
@@ -4544,6 +4545,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.15.11"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:18.15.12", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.15.12-c785f88018-dff7596db8.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:18.15.12"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@types/parse-json", [\
@@ -7041,6 +7049,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/types", "virtual:760e0e76e3202ca7681e21ec28cced9dbd490b746f9e38ae79080410ca5a772d8143040f6f7c0fbec3d1081148487410fe0c09e694c3da1f1d605da9a42b485e#npm:2.4.0"],\
             ["@mdx-js/react", "virtual:760e0e76e3202ca7681e21ec28cced9dbd490b746f9e38ae79080410ca5a772d8143040f6f7c0fbec3d1081148487410fe0c09e694c3da1f1d605da9a42b485e#npm:1.6.22"],\
             ["@tsconfig/docusaurus", "npm:1.0.7"],\
+            ["@types/node", "npm:18.15.12"],\
             ["@types/react", "npm:17.0.58"],\
             ["@types/react-dom", "npm:17.0.19"],\
             ["clsx", "npm:1.2.1"],\
