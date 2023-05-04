@@ -8,15 +8,13 @@ CORS 문제를 해결하다가 알게 된 사실.
 
 <!--truncate-->
 
-iframe으로 기능을 구현하려고 NginX 리버스 프록시까지 적용하며 하나씩 퀘스트를 깨 가던 중...
+iframe으로 기능을 구현하려고 (iframe 극혐이지만 회사 프로젝트라서 어쩔 수 없다. 까라면 까야...) NginX 리버스 프록시까지 적용하며 하나씩 퀘스트를 깨 가던 중이었다.
 
 `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers` 등등 온갖 액세스를 허용하기에 이르렀으니.
 
 가능한 모든 편법을 동원해 드디어 화면에 렌더링되는 iframe의 내용물. 😭
 
-하지만 기쁨도 잠시.
-
-다시 API의 Post 요청의 문턱을 넘지 못했다.
+하지만 기쁨도 잠시, 다시 API의 Post 요청의 문턱을 넘지 못했다.
 
 아무런 의심없이 내장 Fetch API를 사용하고 있었는데 `Response`로 내려주는 내용에서
 
