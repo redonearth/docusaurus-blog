@@ -62,8 +62,9 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/tags', label: 'Tags', position: 'left' },
-          { to: '/archive', label: 'Archive', position: 'left' },
+          { to: '/tags', label: '분류', position: 'left' },
+          { to: '/archive', label: '기록', position: 'left' },
+          { to: '/topics', label: '글감', position: 'left' },
           {
             href: 'https://github.com/redonearth',
             position: 'right',
