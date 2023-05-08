@@ -38,7 +38,10 @@ async createTicket() {
     const { status, headers } = await fetch({
       method: 'POST',
       url: `${this.iframeUrl}/######/##/########`,
-      data: this.userData
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(this.userData),
     });
 
     if (status === 201) {
@@ -72,7 +75,10 @@ async createTicket() {
     const { status, headers } = await this.$axios({
       method: 'post',
       url: `${this.iframeUrl}/######/##/########`,
-      data: this.userData
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      data: this.userData,
     });
 
     if (status === 201) {
@@ -87,9 +93,32 @@ async createTicket() {
 },
 ```
 
-사실상 함수만 바꾼 동일한 코드이다.
+여기서,
 
-참고로, 원래 HTTP request `method`는 대소문자를 구별하기 때문에 대문자로 작성하는 것이 정확하다고 한다.
+```js
+const { status, headers } = await this.$axios({
+  method: 'post',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  url: `${this.iframeUrl}/######/##/########`,
+  data: this.userData,
+});
+```
+
+이 부분을 이렇게 작성할 수도 있다.
+
+```js
+const { status, headers } = await this.$axios.post(`${this.iframeUrl}/######/##/########`, this.userData);
+```
+
+## Fetch와 Axios는 비슷하지만 다르다
+
+Fetch와 Axios는 문법에서도 비슷하지만 다른 부분이 꽤 있음을 알 수 있다.
+
+Fetch에서 `body`에 해당하는 부분은 Axios에서는 `data`로 전달하며, fetch와 달리 `JSON stringify`가 필요없고 자동으로 문자열로 변환해준다. 또한, Fetch에는 없는 *요청 메소드*를 Axios에서 제공한다.
+
+참고로, 원래 HTTP request `method`는 대소문자를 구별하기 때문에 *대문자*로 작성하는 것이 정확하다고 한다.
 
 `GET`, `POST`, `PUT`, `DELETE`, ...
 
@@ -120,7 +149,7 @@ export type Method =
   | 'unlink' | 'UNLINK'
 ```
 
-## Fetch와 Axios는 다르다
+## 결론
 
 Axios에 관한 내용을 구글링해보면 거의 사용 편의성이나 약간의 기능 차이 정도만 설명하고 있어서 평소에는 fetch로도 대부분의 API 요청을 처리하는데 문제가 없기 때문에 당연하게 fetch만 사용하고 있었다.
 
