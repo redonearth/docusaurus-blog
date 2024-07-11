@@ -63,7 +63,7 @@ npm ERR!     /home/jipro/.npm/_logs/2018-12-26T13_06_58_125Z-debug.log
 
 내 경우의 해결법은 의외로 간단했다.
 
-<https://www.npmjs.com/package/bcrypt#if-you-are-submitting-bugsissues>
+[참고 링크](https://www.npmjs.com/package/bcrypt#if-you-are-submitting-bugsissues)
 
 > First, make sure that the version of node you are using is a stable version.
 

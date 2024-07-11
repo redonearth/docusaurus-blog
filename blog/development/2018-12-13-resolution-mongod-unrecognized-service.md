@@ -63,7 +63,7 @@ sudo apt-get install --reinstall mongodb-org
 
 답답해서 내가 찾아보니 이런 링크가 있었다.
 
-<https://github.com/mongodb/mongo/blob/master/debian/init.d>
+[https://github.com/mongodb/mongo/blob/master/debian/init.d](https://github.com/mongodb/mongo/blob/master/debian/init.d)
 
 데비안 계열의 우분투에서 쓰는 `init script`의 내용이다.
 

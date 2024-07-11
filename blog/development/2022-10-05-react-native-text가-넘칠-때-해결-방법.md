@@ -60,9 +60,7 @@ const Column = styled.View`
 
 ## 해결 방법
 
-구글링을 하다가 좋은 글을 발견했다.
-
-<https://www.bam.tech/article/why-my-text-is-going-off-screen>
+구글링을 하다가 [좋은 글](https://www.bam.tech/article/why-my-text-is-going-off-screen)을 발견했다.
 
 부모 요소가 아니라 해당 요소에 `flex: 1` 속성을 주는 것이다.
 

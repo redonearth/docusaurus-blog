@@ -14,7 +14,7 @@ tags: [database, impala, hadoop, query, sql]
 
 내가 해결한 방법은 Impala의 내장 함수 중 `IS_NAN`을 사용했다.
 
-<https://docs.cloudera.com/runtime/7.0.3/impala-sql-reference/topics/impala-math-functions.html#math_functions__is_nan>
+[참고 링크](https://docs.cloudera.com/runtime/7.0.3/impala-sql-reference/topics/impala-math-functions.html#math_functions__is_nan)
 
 _NaN_ 이 있으면 `true`, 없으면 `false`를 반환한다.
 

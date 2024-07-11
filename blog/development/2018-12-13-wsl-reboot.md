@@ -8,9 +8,7 @@ WSL은 어떻게 재부팅하지?
 
 <!--truncate-->
 
-아래의 링크를 참고했다.
-
-<https://superuser.com/questions/1126721/rebooting-ubuntu-on-windows-without-rebooting-windows/1347725>
+해당 [링크](https://superuser.com/questions/1126721/rebooting-ubuntu-on-windows-without-rebooting-windows/1347725)를 참고했다.
 
 윈도우 CMD를 _관리자 권한으로 실행_ (중요!) 하여 아래의 명령어를 입력한다.
 
