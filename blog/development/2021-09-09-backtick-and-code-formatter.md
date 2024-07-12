@@ -34,9 +34,8 @@ ES2015(ES6)에서 [템플릿 리터럴](https://developer.mozilla.org/ko/docs/We
 
 ### 1번 예제 ('+' 연산자를 사용한 문자열 결합)
 
-```js
-let request =
-  phoneNumber.substr(0, 3) + '-' + phoneNumber.substr(3, 3) + '-' + phoneNumber.substr(6);
+```javascript
+let request = phoneNumber.substr(0, 3) + '-' + phoneNumber.substr(3, 3) + '-' + phoneNumber.substr(6);
 
 // 010-1234-5678
 ```
@@ -45,7 +44,7 @@ let request =
 
 _백틱_ 으로 작성한다면 이러한 코드가 될 것이다.
 
-```js
+```javascript
 let request = `${phoneNumber.substr(0, 3)}-${phoneNumber.substr(3, 3)}-${phoneNumber.substr(6)}`;
 
 // 010-1234-5678
@@ -75,6 +74,7 @@ let request = `
 ### 한 줄로 입력한 경우
 
 ```javascript
+// prettier-ignore
 let request = `${phoneNumber.substr(0, 3)}-${phoneNumber.substr(
   3,
   3
@@ -92,7 +92,8 @@ let request = `${phoneNumber.substr(0, 3)}-${phoneNumber.substr(
 
 ### A. 백틱을 열고 indent를 추가하여 입력한 경우
 
-```js
+```javascript
+// prettier-ignore
 let request = `
   ${phoneNumber.substr(0, 3)}-${phoneNumber.substr(3, 3)}-${phoneNumber.substr(
   6
@@ -107,7 +108,8 @@ let request = `
 
 가독성을 위해 들여쓰기를 추가하고 `String`을 작성했다.
 
-```js
+```javascript
+// prettier-ignore
 let request = `
   ${phoneNumber.substr(0, 3)}
   -

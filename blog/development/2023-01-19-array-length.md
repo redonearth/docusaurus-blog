@@ -1,6 +1,6 @@
 ---
 slug: array-length
-title: "Array.length"
+title: 'Array.length'
 tags: [javascript]
 ---
 
@@ -15,14 +15,7 @@ tags: [javascript]
 `length` 속성에 값을 설정하게 되면, 배열의 길이를 변경할 수 있다.
 
 ```js
-const menu = [
-  "pizza",
-  "chicken",
-  "jokbal",
-  "budaejjigae",
-  "samgyeopsal",
-  "gganpunggi",
-];
+const menu = ['pizza', 'chicken', 'jokbal', 'budaejjigae', 'samgyeopsal', 'gganpunggi'];
 console.log(`메뉴 개수 : ${menu.length}개`); // 메뉴 개수 : 6개
 
 menu.length = 0;
