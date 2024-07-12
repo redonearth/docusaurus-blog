@@ -17,7 +17,7 @@ tags: [algorithm, javascript]
 - 아이디와 비밀번호가 모두 일치하는 회원정보가 있으면 “login”을 return합니다.
 - 로그인이 실패했을 때 아이디가 일치하는 회원이 없다면 “fail”를, 아이디는 일치하지만 비밀번호가 일치하는 회원이 없다면 “wrong pw”를 return 합니다.
 
-<!--truncate-->
+{/* truncate */}
 
 ### 입출력 예
 
@@ -34,8 +34,6 @@ function solution(id_pw, db) {
   const [id, pw] = id_pw;
 
   if (!db.find(([_id]) => _id === id)) return 'fail';
-  return db.find(([_id, _pw]) => _id === id && _pw === pw)
-    ? 'login'
-    : 'wrong pw';
+  return db.find(([_id, _pw]) => _id === id && _pw === pw) ? 'login' : 'wrong pw';
 }
 ```
