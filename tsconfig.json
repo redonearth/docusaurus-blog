@@ -1,6 +1,7 @@
 {
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
+    "noEmit": true,
     "baseUrl": "."
   }
 }
