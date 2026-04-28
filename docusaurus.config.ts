@@ -6,16 +6,16 @@ const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
 const config: Config = {
-  title: `Redonearth의 개발 블로그`,
-  tagline: 'Dev Blog of Redonearth',
-  url: 'https://redonearth.com',
+  title: `Jeynes의 개발 블로그`,
+  tagline: 'Dev Blog of Jeynes',
+  url: 'https://jeynes.me',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'redonearth', // Usually your GitHub org/user name.
+  organizationName: 'jeynes', // Usually your GitHub org/user name.
   projectName: 'docusaurus-blog', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -64,9 +64,9 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: `Redonearth의 개발 블로그`,
+      title: `Jeynes의 개발 블로그`,
       logo: {
-        alt: 'Redonearth Logo',
+        alt: 'Jeynes Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -98,7 +98,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Redonearth의 개발 블로그. Built with Docusaurus. 🦖`,
+      copyright: `Copyright © ${new Date().getFullYear()} Jeynes의 개발 블로그. Built with Docusaurus. 🦖`,
     },
     prism: {
       theme: lightCodeTheme,
