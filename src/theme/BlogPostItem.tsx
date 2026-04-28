@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import OriginalBlogPostItem from '@theme-original/BlogPostItem';
 
-import { useBlogPost } from '@docusaurus/theme-common/internal';
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
 import { useColorMode } from '@docusaurus/theme-common';
 
 const utterancesSelector = 'iframe.utterances-frame';
@@ -10,12 +10,13 @@ export default function BlogPostItem(props: any): JSX.Element {
   const { isBlogPostPage } = useBlogPost();
   const { colorMode } = useColorMode();
   const utterancesTheme = colorMode === 'dark' ? 'github-dark' : 'github-light';
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!isBlogPostPage) return;
+    if (!isBlogPostPage || !containerRef.current) return;
 
-    const utterancesEl = containerRef.current.querySelector(utterancesSelector);
+    const container = containerRef.current;
+    const utterancesEl = container.querySelector<HTMLIFrameElement>(utterancesSelector);
 
     const createUtterancesEl = () => {
       const script = document.createElement('script');
@@ -28,7 +29,7 @@ export default function BlogPostItem(props: any): JSX.Element {
       script.crossOrigin = 'anonymous';
       script.async = true;
 
-      containerRef.current.appendChild(script);
+      container.appendChild(script);
     };
 
     const postThemeMessage = () => {
@@ -37,7 +38,7 @@ export default function BlogPostItem(props: any): JSX.Element {
         theme: utterancesTheme,
       };
 
-      utterancesEl.contentWindow.postMessage(message, 'https://utteranc.es');
+      utterancesEl?.contentWindow?.postMessage(message, 'https://utteranc.es');
     };
 
     utterancesEl ? postThemeMessage() : createUtterancesEl();

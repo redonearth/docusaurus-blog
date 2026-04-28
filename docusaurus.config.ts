@@ -11,7 +11,6 @@ const config: Config = {
   url: 'https://redonearth.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
@@ -27,6 +26,18 @@ const config: Config = {
     locales: ['ko'],
   },
 
+  future: {
+    faster: true,
+    v4: true,
+  },
+
+  markdown: {
+    format: 'detect',
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
+
   presets: [
     [
       'classic',
@@ -37,8 +48,8 @@ const config: Config = {
           blogSidebarTitle: '최근 게시물',
           blogSidebarCount: 8,
           showReadingTime: true,
-          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
-            frontMatter.hide_reading_time ? undefined : defaultReadingTime({ content }),
+          readingTime: ({ content, frontMatter, locale, defaultReadingTime }) =>
+            frontMatter.hide_reading_time ? undefined : defaultReadingTime({ content, locale }),
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

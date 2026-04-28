@@ -2,6 +2,6 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "noEmit": true,
-    "baseUrl": "."
+    "ignoreDeprecations": "6.0"
   }
 }
